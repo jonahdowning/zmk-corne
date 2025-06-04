@@ -108,7 +108,7 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_tap>,
-                <&kp P &kp R &kp I &kp N &kp T &kp SEMI &kp S &kp T &kp A &kp R &kp R &kp Y &kp N0 &kp SEMI &kp C &kp H &kp E &kp E &kp R>;
+                <&kp P &kp R &kp I &kp N &kp T &kp SEMI &kp S &kp T &kp A &kp R &kp R &kp Y &kp N0 &kp SEMI &kp C &kp H &kp E &kp E &kp R &kp RETURN>;
 
             label = "MYSTERIOUS";
         };
