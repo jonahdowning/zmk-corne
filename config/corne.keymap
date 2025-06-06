@@ -75,7 +75,7 @@
 
         mousless {
             bindings = <&kp LA(LC(LS(LG(RIGHT))))>;
-            key-positions = <39 19>;
+            key-positions = <39 30>;
         };
 
         W_forwardPage {
@@ -91,6 +91,36 @@
         delLine {
             bindings = <&kp LC(BACKSPACE)>;
             key-positions = <36 41>;
+        };
+
+        win1 {
+            bindings = <&kp LG(NUMBER_1)>;
+            key-positions = <39 19>;
+        };
+
+        win2 {
+            bindings = <&kp LG(NUMBER_2)>;
+            key-positions = <39 20>;
+        };
+
+        win3 {
+            bindings = <&kp LG(NUMBER_3)>;
+            key-positions = <39 21>;
+        };
+
+        win4 {
+            bindings = <&kp LG(NUMBER_4)>;
+            key-positions = <39 22>;
+        };
+
+        win5 {
+            bindings = <&kp LG(N5)>;
+            key-positions = <39 23>;
+        };
+
+        win6 {
+            bindings = <&kp LG(NUMBER_6)>;
+            key-positions = <39 35>;
         };
     };
 
