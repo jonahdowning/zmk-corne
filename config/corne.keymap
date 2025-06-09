@@ -60,7 +60,7 @@
 
         HomeRowApp {
             bindings = <&kp LC(LA(LS(LG(F))))>;
-            key-positions = <16 38>;
+            key-positions = <38 28>;
         };
 
         Dictation_bound_to_hyper_b {
@@ -75,7 +75,7 @@
 
         mousless {
             bindings = <&kp LA(LC(LS(LG(RIGHT))))>;
-            key-positions = <39 30>;
+            key-positions = <39 31>;
         };
 
         W_forwardPage {
@@ -95,32 +95,27 @@
 
         win1 {
             bindings = <&kp LG(NUMBER_1)>;
-            key-positions = <39 19>;
+            key-positions = <19 31>;
         };
 
         win2 {
             bindings = <&kp LG(NUMBER_2)>;
-            key-positions = <39 20>;
+            key-positions = <20 32>;
         };
 
         win3 {
             bindings = <&kp LG(NUMBER_3)>;
-            key-positions = <39 21>;
+            key-positions = <21 33>;
         };
 
         win4 {
             bindings = <&kp LG(NUMBER_4)>;
-            key-positions = <39 22>;
+            key-positions = <22 34>;
         };
 
         win5 {
             bindings = <&kp LG(N5)>;
-            key-positions = <39 23>;
-        };
-
-        win6 {
-            bindings = <&kp LG(NUMBER_6)>;
-            key-positions = <39 35>;
+            key-positions = <23 35>;
         };
     };
 
