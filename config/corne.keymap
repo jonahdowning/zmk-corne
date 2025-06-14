@@ -5,6 +5,7 @@
  */
 
 #include <behaviors.dtsi>
+#include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 
 &mt {
@@ -26,21 +27,6 @@
         escape {
             bindings = <&kp ESCAPE>;
             key-positions = <22 21 20 19>;
-        };
-
-        del_word {
-            bindings = <&kp LA(BACKSPACE)>;
-            key-positions = <37 40>;
-        };
-
-        backpage {
-            bindings = <&kp LC(LEFT_BRACKET)>;
-            key-positions = <15 16 14>;
-        };
-
-        forwardPage {
-            bindings = <&kp LC(RIGHT_BRACKET)>;
-            key-positions = <17 15 16>;
         };
 
         capsLock {
@@ -76,16 +62,6 @@
         mousless {
             bindings = <&kp LA(LC(LS(LG(RIGHT))))>;
             key-positions = <39 31>;
-        };
-
-        W_forwardPage {
-            bindings = <&kp LA(RIGHT_ARROW)>;
-            key-positions = <4 3 5>;
-        };
-
-        W_backPage {
-            bindings = <&kp LA(LEFT_ARROW)>;
-            key-positions = <4 3 2>;
         };
 
         delLine {
@@ -140,7 +116,7 @@
     };
 
     macros {
-        del_line: del_line {
+        wDelLine: del_line {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&macro_tap>, <&kp END &kp LS(HOME) &kp BACKSPACE>;
@@ -148,7 +124,7 @@
             label = "DEL_LINE";
         };
 
-        mysterious: mysterious {
+        wbobb: mysterious {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
@@ -157,6 +133,14 @@
 
             label = "MYSTERIOUS";
         };
+
+        mDelLine: mDelLine {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap>, <&kp LG(RIGHT) &kp LG(BACKSPACE)>;
+
+            label = "MDELLINE";
+        };
     };
 
     keymap {
@@ -164,37 +148,91 @@
 
         MAC_BASE {
             bindings = <
-&none  &kp Q  &kp W  &kp E  &kp R  &kp T    &kp Y      &kp U     &kp I      &kp O    &kp P     &kp MINUS
-&none  &kp A  &kp S  &kp D  &kp F  &kp G    &kp H      &kp J     &kp K      &kp L    &kp SEMI  &kp SQT
-&none  &kp Z  &kp X  &kp C  &kp V  &kp B    &kp N      &kp M     &kp COMMA  &kp DOT  &kp FSLH  &none
-                     &none  &none  &kp R    &kp SPACE  &kp BSPC  &none
+&none  &kp Q             &kp W  &kp E    &kp R    &kp T    &kp Y      &kp U     &kp I      &kp O    &kp P     &kp MINUS
+&none  &kp A             &kp S  &kp D    &kp F    &kp G    &kp H      &kp J     &kp K      &kp L    &kp SEMI  &kp SQT
+&none  &mt LEFT_SHIFT Z  &kp X  &kp C    &kp V    &kp B    &kp N      &kp M     &kp COMMA  &kp DOT  &kp FSLH  &none
+                                &lt 5 S  &lt 4 S  &kp R    &kp SPACE  &kp BSPC  &none
             >;
         };
 
         WINDOWS_BASE {
             bindings = <
-&none  &kp Q  &kp W  &kp E  &kp R    &kp T    &kp Y  &kp U  &kp I      &kp O    &kp P     &none
-&none  &kp A  &kp S  &kp D  &kp F    &kp G    &kp H  &kp J  &kp K      &kp L    &kp SEMI  &kp SQT
-&none  &kp Z  &kp X  &kp C  &kp V    &kp B    &kp N  &kp M  &kp COMMA  &kp DOT  &kp FSLH  &none
-                     &none  &lt 1 A  &none    &none  &none  &none
+&none  &kp Q  &kp W  &kp E  &kp R    &kp T    &kp Y      &kp U     &kp I      &kp O    &kp P     &none
+&none  &kp A  &kp S  &kp D  &kp F    &kp G    &kp H      &kp J     &kp K      &kp L    &kp SEMI  &kp SQT
+&none  &kp Z  &kp X  &kp C  &kp V    &kp B    &kp N      &kp M     &kp COMMA  &kp DOT  &kp FSLH  &none
+                     &none  &lt 1 A  &kp R    &kp SPACE  &kp BSPC  &kp DEL
             >;
         };
 
         mNav {
             bindings = <
-&kp LS(LG(LC(LA(B))))         &kp LG(LC(LA(LS(GRAVE))))     &kp LG(LBKT)   &kp LG(RBKT)  &kp LG(R)  &kp LG(X)                           &kp LS(TAB)   &kp PG_DN  &kp PG_UP  &kp TAB        &kp ESC  &none
-&kp LS(LA(LC(LG(NUMBER_4))))  &kp LG(LC(LA(LS(NUMBER_2))))  &kp LS(LG(Z))  &kp LG(Z)     &kp LG(C)  &kp LG(V)                           &kp LEFT      &kp DOWN   &kp UP     &kp RIGHT      &kp RET  &none
-&kp LA(LS(LEFT_COMMAND))      &kp RSHFT                     &kp LCTRL      &kp LALT      &kp LGUI   &kp LS(LA(LC(LG(LEFT_COMMAND))))    &kp LG(LEFT)  &none      &none      &kp LG(RIGHT)  &none    &none
-                                                                           &none         &none      &none                               &kp SPACE     &kp BSPC   &kp DEL
+&kp LS(LG(LC(LA(B))))         &kp LG(LC(LA(LS(GRAVE))))     &kp LC(LBKT)   &kp LC(RBKT)  &kp LC(R)         &kp LC(X)                           &kp LS(TAB)   &kp PG_DN          &kp PG_UP  &kp TAB        &kp ESC  &none
+&kp LS(LA(LC(LG(NUMBER_4))))  &kp LG(LC(LA(LS(NUMBER_2))))  &kp LS(LC(Z))  &kp LC(Z)     &kp LC(C)         &kp LC(V)                           &kp LEFT      &kp DOWN           &kp UP     &kp RIGHT      &kp RET  &none
+&kp LA(LS(LEFT_COMMAND))      &kp RSHFT                     &kp LEFT_GUI   &kp LALT      &kp LEFT_CONTROL  &kp LS(LA(LC(LG(LEFT_COMMAND))))    &kp LC(LEFT)  &kp LA(BACKSPACE)  &mDelLine  &kp LC(RIGHT)  &none    &none
+                                                                           &none         &none             &none                               &kp SPACE     &kp BSPC           &kp DEL
             >;
         };
 
         wNav {
             bindings = <
-&kp LS(LG(LC(LA(B))))         &kp LG(LC(LA(LS(GRAVE))))     &kp LA(LBKT)   &kp LA(RBKT)  &kp LC(R)  &kp LC(X)                           &kp LS(TAB)   &kp PG_DN  &kp PG_UP  &kp TAB      &kp ESC  &none
-&kp LS(LA(LC(LG(NUMBER_4))))  &kp LG(LC(LA(LS(NUMBER_2))))  &kp LS(LG(Z))  &kp LG(Z)     &kp LG(C)  &kp LC(V)                           &kp LEFT      &kp DOWN   &kp UP     &kp RIGHT    &kp RET  &none
-&kp LA(LS(LEFT_COMMAND))      &kp RSHFT                     &kp LCTRL      &kp LALT      &kp LGUI   &kp LS(LA(LC(LG(LEFT_COMMAND))))    &kp LG(HOME)  &del_line  &none      &kp LG(END)  &none    &none
-                                                                           &none         &none      &none                               &kp SPACE     &kp BSPC   &kp DEL
+&none                     &none      &kp LA(LBKT)   &kp LA(RBKT)  &kp LC(R)         &kp LC(X)                           &kp LS(TAB)  &kp PG_DN          &kp PG_UP  &kp TAB    &kp ESC  &none
+&none                     &none      &kp LS(LC(Z))  &kp LC(Z)     &kp LC(C)         &kp LC(V)                           &kp LEFT     &kp DOWN           &kp UP     &kp RIGHT  &kp RET  &none
+&kp LA(LS(LEFT_COMMAND))  &kp RSHFT  &kp LEFT_GUI   &kp LALT      &kp LEFT_CONTROL  &kp LS(LA(LC(LG(LEFT_COMMAND))))    &kp HOME     &kp LC(BACKSPACE)  &wDelLine  &kp END    &none    &none
+                                                    &none         &none             &none                               &kp SPACE    &kp BSPC           &kp DEL
+            >;
+        };
+
+        NUM {
+            bindings = <
+&none  &none      &none     &none      &none      &none    &kp FSLH      &kp N7    &kp N8  &kp N9  &kp MINUS  &none
+&none  &none      &none     &none      &none      &none    &kp DOT       &kp N4    &kp N5  &kp N6  &kp EQUAL  &none
+&none  &kp LSHFT  &kp LGUI  &kp LALT   &kp LCTRL  &none    &kp ASTERISK  &kp N1    &kp N2  &kp N3  &kp PLUS   &none
+                            &kp EQUAL  &kp LG(Z)  &none    &kp N0        &kp BSPC  &none
+            >;
+        };
+
+        mWindow {
+            bindings = <
+&none  &none  &none  &none  &none  &none    &kp LA(LS(LG(GRAVE)))   &kp N1                 &kp N2                 &kp N3         &kp N4    &kp LS(LA(LG(P)))
+&none  &none  &none  &none  &none  &none    &kp H                   &kp J                  &kp K                  &kp L          &kp SEMI  &kp SQT
+&none  &none  &none  &none  &none  &none    &kp LS(LA(LG(F)))       &kp LS(LA(LG(MINUS)))  &kp LG(LA(LS(EQUAL)))  &kp LC(LG(F))  &none     &kp LA(LS(LG(R)))
+                     &none  &none  &none    &kp LA(LC(LEFT_SHIFT))  &kp LA(LC(LEFT_GUI))   &none
+            >;
+        };
+
+        wWindow {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp N1  &kp N2  &kp N3  &kp N4  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
+            >;
+        };
+
+        FN {
+            bindings = <
+&trans  &trans     &trans    &trans    &trans     &trans    &trans  &kp F7  &kp F8  &kp F9  &kp F10  &trans
+&trans  &trans     &trans    &trans    &trans     &trans    &trans  &kp F4  &kp F5  &kp F6  &kp F11  &trans
+&trans  &kp LSHFT  &kp LGUI  &kp LALT  &kp LCTRL  &trans    &trans  &kp F1  &kp F2  &kp F3  &kp F12  &trans
+                             &trans    &trans     &trans    &trans  &trans  &trans
+            >;
+        };
+
+        SYSTEM {
+            bindings = <
+&bt BT_CLR  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans      &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans      &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                            &trans  &trans  &trans    &trans  &trans  &trans
+            >;
+        };
+
+        VisualStudio {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
     };
