@@ -48,7 +48,7 @@
 
         mHomeRowApp {
             bindings = <&kp LC(LA(LS(LG(F))))>;
-            key-positions = <38 28>;
+            key-positions = <38 16>;
             layers = <0 2 4 6 8 9>;
         };
 
@@ -60,13 +60,13 @@
 
         mLeaderKey {
             bindings = <&kp LS(LA(LG(RIGHT)))>;
-            key-positions = <38 39>;
+            key-positions = <39 20>;
             layers = <0 2 4 6 8 9>;
         };
 
         mMousless {
             bindings = <&kp LA(LC(LS(LG(RIGHT))))>;
-            key-positions = <39 31>;
+            key-positions = <39 19>;
             layers = <0 2 4 6 8 9>;
         };
 
@@ -169,19 +169,19 @@
 
         mShort+Nav {
             bindings = <
-&kp LS(LG(LC(LA(B))))         &kp LG(LC(LA(LS(GRAVE))))     &kp LC(LBKT)   &kp LC(RBKT)  &kp LC(R)         &kp LC(X)                           &kp LS(TAB)   &kp PG_DN          &kp PG_UP  &kp TAB        &kp ESC  &none
-&kp LS(LA(LC(LG(NUMBER_4))))  &kp LG(LC(LA(LS(NUMBER_2))))  &kp LS(LC(Z))  &kp LC(Z)     &kp LC(C)         &kp LC(V)                           &kp LEFT      &kp DOWN           &kp UP     &kp RIGHT      &kp RET  &none
-&kp LA(LS(LEFT_COMMAND))      &kp RSHFT                     &kp LEFT_GUI   &kp LALT      &kp LEFT_CONTROL  &kp LS(LA(LC(LG(LEFT_COMMAND))))    &kp LC(LEFT)  &kp LA(BACKSPACE)  &mDelLine  &kp LC(RIGHT)  &none    &none
-                                                                           &none         &none             &none                               &kp SPACE     &kp BSPC           &kp DEL
+&kp LS(LG(LC(LA(B))))         &kp LG(LC(LA(LS(GRAVE))))     &kp LC(LBKT)   &kp LC(RBKT)  &kp LC(R)         &kp LC(X)                           &kp LS(TAB)   &kp PG_DN  &kp PG_UP  &kp TAB        &kp ESC  &none
+&kp LS(LA(LC(LG(NUMBER_4))))  &kp LG(LC(LA(LS(NUMBER_2))))  &kp LS(LC(Z))  &kp LC(Z)     &kp LC(C)         &kp LC(V)                           &kp LEFT      &kp DOWN   &kp UP     &kp RIGHT      &kp RET  &none
+&kp LA(LS(LEFT_COMMAND))      &kp RSHFT                     &kp LEFT_GUI   &kp LALT      &kp LEFT_CONTROL  &kp LS(LA(LC(LG(LEFT_COMMAND))))    &kp LC(LEFT)  &mDelLine  &none      &kp LC(RIGHT)  &none    &none
+                                                                           &none         &none             &none                               &kp SPACE     &kp BSPC   &kp DEL
             >;
         };
 
         wShort+Nav {
             bindings = <
-&none                     &none          &kp LA(LBKT)   &kp LA(RBKT)  &kp LC(R)         &kp LC(X)                           &kp LS(TAB)  &kp PG_DN          &kp PG_UP  &kp TAB    &kp ESC  &none
-&none                     &kp LG(LS(S))  &kp LS(LC(Z))  &kp LC(Z)     &kp LC(C)         &kp LC(V)                           &kp LEFT     &kp DOWN           &kp UP     &kp RIGHT  &kp RET  &none
-&kp LA(LS(LEFT_COMMAND))  &kp RSHFT      &kp LEFT_GUI   &kp LALT      &kp LEFT_CONTROL  &kp LS(LA(LC(LG(LEFT_COMMAND))))    &kp HOME     &kp LC(BACKSPACE)  &wDelLine  &kp END    &none    &none
-                                                        &none         &none             &none                               &kp SPACE    &kp BSPC           &kp DEL
+&none                     &none          &kp LA(LBKT)   &kp LA(RBKT)  &kp LC(R)         &kp LC(X)                           &kp LS(TAB)  &kp PG_DN  &kp PG_UP  &kp TAB    &kp ESC  &none
+&none                     &kp LG(LS(S))  &kp LS(LC(Z))  &kp LC(Z)     &kp LC(C)         &kp LC(V)                           &kp LEFT     &kp DOWN   &kp UP     &kp RIGHT  &kp RET  &none
+&kp LA(LS(LEFT_COMMAND))  &kp RSHFT      &kp LEFT_GUI   &kp LALT      &kp LEFT_CONTROL  &kp LS(LA(LC(LG(LEFT_COMMAND))))    &kp HOME     &wDelLine  &none      &kp END    &none    &none
+                                                        &none         &none             &none                               &kp SPACE    &kp BSPC   &kp DEL
             >;
         };
 
