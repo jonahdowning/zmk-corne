@@ -46,29 +46,28 @@
             key-positions = <18 19 20>;
         };
 
-        HomeRowApp {
+        mHomeRowApp {
             bindings = <&kp LC(LA(LS(LG(F))))>;
             key-positions = <38 28>;
+            layers = <0 2 4 6 8 9>;
         };
 
-        Dictation_bound_to_hyper_b {
-            bindings = <&kp LS(LG(LC(LA(B))))>;
+        mDictation {
+            bindings = <&kp LS(LG(LC(LA(V))))>;
             key-positions = <13 14 15>;
+            layers = <0 2 4 6 8 9>;
         };
 
-        LeaderKey {
+        mLeaderKey {
             bindings = <&kp LS(LA(LG(RIGHT)))>;
             key-positions = <38 39>;
+            layers = <0 2 4 6 8 9>;
         };
 
-        mousless {
+        mMousless {
             bindings = <&kp LA(LC(LS(LG(RIGHT))))>;
             key-positions = <39 31>;
-        };
-
-        delLine {
-            bindings = <&kp LC(BACKSPACE)>;
-            key-positions = <36 41>;
+            layers = <0 2 4 6 8 9>;
         };
 
         l_shift {
@@ -99,6 +98,23 @@
         caps_word {
             bindings = <&caps_word>;
             key-positions = <2 3 8 9>;
+        };
+
+        mDelWord {
+            bindings = <&kp LA(BACKSPACE)>;
+            key-positions = <39 38>;
+            layers = <0 2 4 6 8 9>;
+        };
+
+        wDelWord {
+            bindings = <&kp LC(BACKSPACE)>;
+            key-positions = <39 38>;
+            layers = <1 3 5 7 8 9>;
+        };
+
+        stickyshift {
+            bindings = <&sk LEFT_SHIFT>;
+            key-positions = <37 40>;
         };
     };
 
