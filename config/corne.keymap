@@ -191,10 +191,10 @@
 
         mMouse+Window {
             bindings = <
-&none  &none           &mmv MOVE_RIGHT  &mmv MOVE_UP     &mkp RCLK  &none    &kp LA(LS(LG(GRAVE)))   &kp N1                 &kp N2                 &kp N3         &kp N4    &kp LS(LA(LG(P)))
-&none  &msc SCRL_UP    &mmv MOVE_LEFT   &mmv MOVE_DOWN   &mkp LCLK  &none    &kp H                   &kp J                  &kp K                  &kp L          &kp SEMI  &kp SQT
-&none  &msc SCRL_DOWN  &msc SCRL_LEFT   &msc SCRL_RIGHT  &mkp MCLK  &none    &kp LS(LA(LG(F)))       &kp LS(LA(LG(MINUS)))  &kp LG(LA(LS(EQUAL)))  &kp LC(LG(F))  &none     &kp LA(LS(LG(R)))
-                                        &none            &none      &none    &kp LA(LC(LEFT_SHIFT))  &kp LA(LC(LEFT_GUI))   &none
+&none  &none           &mmv MOVE_RIGHT  &mmv MOVE_UP     &mkp RCLK  &none    &kp LA(LS(LG(GRAVE)))       &kp N1                 &kp N2                 &kp N3         &kp N4    &kp LS(LA(LG(P)))
+&none  &msc SCRL_UP    &mmv MOVE_LEFT   &mmv MOVE_DOWN   &mkp LCLK  &none    &kp H                       &kp J                  &kp K                  &kp L          &kp SEMI  &kp SQT
+&none  &msc SCRL_DOWN  &msc SCRL_LEFT   &msc SCRL_RIGHT  &mkp MCLK  &none    &kp LS(LA(LG(F)))           &kp LS(LA(LG(MINUS)))  &kp LG(LA(LS(EQUAL)))  &kp LC(LG(F))  &none     &kp LA(LS(LG(R)))
+                                        &none            &none      &none    &kp LA(LG(LS(LEFT_SHIFT)))  &kp LA(LC(LEFT_GUI))   &none
             >;
         };
 
