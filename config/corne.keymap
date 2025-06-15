@@ -150,7 +150,7 @@
 
         MAC_BASE {
             bindings = <
-&none                 &kp Q             &kp W           &kp E           &kp R               &kp T                             &kp Y                            &kp U                &kp I                &kp O                 &kp P                  &kp MINUS
+&kp N0                &kp Q             &kp W           &kp E           &kp R               &kp T                             &kp Y                            &kp U                &kp I                &kp O                 &kp P                  &kp MINUS
 &none                 &kp A             &kp S           &kp D           &kp F               &kp G                             &kp H                            &kp J                &kp K                &kp L                 &kp SEMI               &kp SQT
 &kp LA(LS(LEFT_GUI))  &mt LEFT_SHIFT Z  &mt LEFT_GUI X  &mt LEFT_ALT C  &mt LEFT_CONTROL V  &mt LS(LA(LC(LG(LEFT_GUI)))) B    &mt LC(LA(LS(LG(RIGHT_GUI)))) N  &mt RIGHT_CONTROL M  &mt RIGHT_ALT COMMA  &mt RIGHT_GUI PERIOD  &mt RIGHT_SHIFT SLASH  &none
                                                         &lt 4 S         &lt 10 S            &lt 2 R                           &kp SPACE                        &lt 8 BSPC           &lt 6 B
@@ -159,10 +159,10 @@
 
         WINDOW-BASE {
             bindings = <
-&none  &kp Q             &kp W           &kp E           &kp R               &kp T                             &kp Y                            &kp U               &kp I                &kp O              &kp P                 &kp MINUS
-&none  &kp A             &kp S           &kp D           &kp F               &kp G                             &kp H                            &kp J               &kp K                &kp L              &kp SEMI              &kp SQT
-&none  &mt LEFT_SHIFT Z  &mt LEFT_GUI X  &mt LEFT_ALT C  &mt LEFT_CONTROL V  &mt LS(LA(LC(LG(LEFT_GUI)))) B    &mt RS(RA(RC(RG(RIGHT_GUI)))) N  &mt LEFT_CONTROL M  &mt RIGHT_ALT COMMA  &mt RIGHT_GUI DOT  &mt RIGHT_SHIFT FSLH  &none
-                                         &lt 5 S         &lt 10 S            &lt 3 R                           &kp SPACE                        &lt 8 BSPC          &lt 7 B
+&kp NUMBER_1  &kp Q             &kp W           &kp E           &kp R               &kp T                             &kp Y                            &kp U               &kp I                &kp O              &kp P                 &kp MINUS
+&none         &kp A             &kp S           &kp D           &kp F               &kp G                             &kp H                            &kp J               &kp K                &kp L              &kp SEMI              &kp SQT
+&none         &mt LEFT_SHIFT Z  &mt LEFT_GUI X  &mt LEFT_ALT C  &mt LEFT_CONTROL V  &mt LS(LA(LC(LG(LEFT_GUI)))) B    &mt RS(RA(RC(RG(RIGHT_GUI)))) N  &mt LEFT_CONTROL M  &mt RIGHT_ALT COMMA  &mt RIGHT_GUI DOT  &mt RIGHT_SHIFT FSLH  &none
+                                                &lt 5 S         &lt 10 S            &lt 3 R                           &kp SPACE                        &lt 8 BSPC          &lt 7 B
             >;
         };
 
@@ -171,13 +171,13 @@
 &kp LS(LG(LC(LA(B))))         &kp LG(LC(LA(LS(GRAVE))))     &kp LC(LBKT)   &kp LC(RBKT)  &kp LC(R)         &kp LC(X)                           &kp LS(TAB)   &kp PG_DN          &kp PG_UP  &kp TAB        &kp ESC  &none
 &kp LS(LA(LC(LG(NUMBER_4))))  &kp LG(LC(LA(LS(NUMBER_2))))  &kp LS(LC(Z))  &kp LC(Z)     &kp LC(C)         &kp LC(V)                           &kp LEFT      &kp DOWN           &kp UP     &kp RIGHT      &kp RET  &none
 &kp LA(LS(LEFT_COMMAND))      &kp RSHFT                     &kp LEFT_GUI   &kp LALT      &kp LEFT_CONTROL  &kp LS(LA(LC(LG(LEFT_COMMAND))))    &kp LC(LEFT)  &kp LA(BACKSPACE)  &mDelLine  &kp LC(RIGHT)  &none    &none
-                                                                           &none         &none             &none                               &kp SPACE     &kp BSPC           &kp DEL
+                                                                           &kp NUMBER_2  &none             &none                               &kp SPACE     &kp BSPC           &kp DEL
             >;
         };
 
         wShort+Nav {
             bindings = <
-&none                     &none          &kp LA(LBKT)   &kp LA(RBKT)  &kp LC(R)         &kp LC(X)                           &kp LS(TAB)  &kp PG_DN          &kp PG_UP  &kp TAB    &kp ESC  &none
+&kp NUMBER_3              &none          &kp LA(LBKT)   &kp LA(RBKT)  &kp LC(R)         &kp LC(X)                           &kp LS(TAB)  &kp PG_DN          &kp PG_UP  &kp TAB    &kp ESC  &none
 &none                     &kp LG(LS(S))  &kp LS(LC(Z))  &kp LC(Z)     &kp LC(C)         &kp LC(V)                           &kp LEFT     &kp DOWN           &kp UP     &kp RIGHT  &kp RET  &none
 &kp LA(LS(LEFT_COMMAND))  &kp RSHFT      &kp LEFT_GUI   &kp LALT      &kp LEFT_CONTROL  &kp LS(LA(LC(LG(LEFT_COMMAND))))    &kp HOME     &kp LC(BACKSPACE)  &wDelLine  &kp END    &none    &none
                                                         &none         &none             &none                               &kp SPACE    &kp BSPC           &kp DEL
@@ -186,16 +186,16 @@
 
         mMouse+Window {
             bindings = <
-&none  &none           &mmv MOVE_RIGHT  &mmv MOVE_UP     &mkp RCLK  &none    &kp LA(LS(LG(GRAVE)))   &kp N1                 &kp N2                 &kp N3         &kp N4    &kp LS(LA(LG(P)))
-&none  &msc SCRL_UP    &mmv MOVE_LEFT   &mmv MOVE_DOWN   &mkp LCLK  &none    &kp H                   &kp J                  &kp K                  &kp L          &kp SEMI  &kp SQT
-&none  &msc SCRL_DOWN  &msc SCRL_LEFT   &msc SCRL_RIGHT  &mkp MCLK  &none    &kp LS(LA(LG(F)))       &kp LS(LA(LG(MINUS)))  &kp LG(LA(LS(EQUAL)))  &kp LC(LG(F))  &none     &kp LA(LS(LG(R)))
-                                        &none            &none      &none    &kp LA(LC(LEFT_SHIFT))  &kp LA(LC(LEFT_GUI))   &none
+&kp NUMBER_4  &none           &mmv MOVE_RIGHT  &mmv MOVE_UP     &mkp RCLK  &none    &kp LA(LS(LG(GRAVE)))   &kp N1                 &kp N2                 &kp N3         &kp N4    &kp LS(LA(LG(P)))
+&none         &msc SCRL_UP    &mmv MOVE_LEFT   &mmv MOVE_DOWN   &mkp LCLK  &none    &kp H                   &kp J                  &kp K                  &kp L          &kp SEMI  &kp SQT
+&none         &msc SCRL_DOWN  &msc SCRL_LEFT   &msc SCRL_RIGHT  &mkp MCLK  &none    &kp LS(LA(LG(F)))       &kp LS(LA(LG(MINUS)))  &kp LG(LA(LS(EQUAL)))  &kp LC(LG(F))  &none     &kp LA(LS(LG(R)))
+                                               &none            &none      &none    &kp LA(LC(LEFT_SHIFT))  &kp LA(LC(LEFT_GUI))   &none
             >;
         };
 
         wMouse+Window {
             bindings = <
-&none      &none           &mmv MOVE_RIGHT  &mmv MOVE_UP     &mkp RCLK  &none    &kp LA(F4)  &kp LG(N7)  &kp LG(N8)  &kp LG(N9)  &kp N4    &kp LS(LA(LG(P)))
+&kp N5     &none           &mmv MOVE_RIGHT  &mmv MOVE_UP     &mkp RCLK  &none    &kp LA(F4)  &kp LG(N7)  &kp LG(N8)  &kp LG(N9)  &kp N4    &kp LS(LA(LG(P)))
 &none      &msc SCRL_UP    &mmv MOVE_LEFT   &mmv MOVE_DOWN   &mkp LCLK  &none    &none       &kp LG(N4)  &kp LG(N5)  &kp LG(N6)  &kp SEMI  &kp SQT
 &kp LG(Z)  &msc SCRL_DOWN  &msc SCRL_LEFT   &msc SCRL_RIGHT  &mkp MCLK  &none    &none       &kp LG(N1)  &kp LG(N2)  &kp LG(N3)  &none     &none
                                             &none            &none      &none    &kp N0      &none       &none
@@ -204,34 +204,34 @@
 
         mVS+FN {
             bindings = <
-&none  &none      &none     &none     &none      &none    &none  &kp F7  &kp F8  &kp F9  &kp F10  &none
-&none  &none      &none     &none     &none      &none    &none  &kp F4  &kp F5  &kp F6  &kp F11  &none
-&none  &kp LSHFT  &kp LGUI  &kp LALT  &kp LCTRL  &none    &none  &kp F1  &kp F2  &kp F3  &kp F12  &none
-                            &none     &none      &none    &none  &none   &none
+&kp NUMBER_6  &none      &none     &none     &none      &none    &none  &kp F7  &kp F8  &kp F9  &kp F10  &none
+&none         &none      &none     &none     &none      &none    &none  &kp F4  &kp F5  &kp F6  &kp F11  &none
+&none         &kp LSHFT  &kp LGUI  &kp LALT  &kp LCTRL  &none    &none  &kp F1  &kp F2  &kp F3  &kp F12  &none
+                                   &none     &none      &none    &none  &none   &none
             >;
         };
 
         wVS+FN {
             bindings = <
-&none  &none      &none     &none     &none      &none    &none  &kp F7  &kp F8  &kp F9  &kp F10  &none
-&none  &none      &none     &none     &none      &none    &none  &kp F4  &kp F5  &kp F6  &kp F11  &none
-&none  &kp LSHFT  &kp LGUI  &kp LALT  &kp LCTRL  &none    &none  &kp F1  &kp F2  &kp F3  &kp F12  &none
-                            &none     &none      &none    &none  &none   &none
+&kp N7  &none      &none     &none     &none      &none    &none  &kp F7  &kp F8  &kp F9  &kp F10  &none
+&none   &none      &none     &none     &none      &none    &none  &kp F4  &kp F5  &kp F6  &kp F11  &none
+&none   &kp LSHFT  &kp LGUI  &kp LALT  &kp LCTRL  &none    &none  &kp F1  &kp F2  &kp F3  &kp F12  &none
+                             &none     &none      &none    &none  &none   &none
             >;
         };
 
         Sym+delim {
             bindings = <
-&none  &none  &none  &none  &none  &none    &kp GRAVE         &kp PERCENT            &kp EXCLAMATION  &kp TILDE          &kp PIPE       &none
-&none  &none  &none  &none  &none  &none    &kp LESS_THAN     &kp LEFT_PARENTHESIS   &kp LEFT_BRACE   &kp LEFT_BRACKET   &kp AMPERSAND  &kp DOLLAR
-&none  &none  &none  &none  &none  &none    &kp GREATER_THAN  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &kp AT_SIGN    &none
-                     &none  &none  &none    &none             &none                  &none
+&kp N8  &none  &none  &none  &none  &none    &kp GRAVE         &kp PERCENT            &kp EXCLAMATION  &kp TILDE          &kp PIPE       &none
+&none   &none  &none  &none  &none  &none    &kp LESS_THAN     &kp LEFT_PARENTHESIS   &kp LEFT_BRACE   &kp LEFT_BRACKET   &kp AMPERSAND  &kp DOLLAR
+&none   &none  &none  &none  &none  &none    &kp GREATER_THAN  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &kp AT_SIGN    &none
+                      &none  &none  &none    &none             &none                  &none
             >;
         };
 
         Media+Num {
             bindings = <
-&none                 &none      &kp K_MUTE  &kp C_VOL_DN  &kp C_VOLUME_UP  &kp C_BRIGHTNESS_INC                          &kp FSLH      &kp N7    &kp N8  &kp N9  &kp MINUS  &none
+&kp N9                &none      &kp K_MUTE  &kp C_VOL_DN  &kp C_VOLUME_UP  &kp C_BRIGHTNESS_INC                          &kp FSLH      &kp N7    &kp N8  &kp N9  &kp MINUS  &none
 &none                 &none      &kp C_PREV  &kp C_PLAY    &kp C_NEXT       &kp C_BRIGHTNESS_DEC                          &kp DOT       &kp N4    &kp N5  &kp N6  &kp EQUAL  &none
 &kp LS(LA(LEFT_GUI))  &kp LSHFT  &kp LGUI    &kp LALT      &kp LCTRL        &mt LC(LA(LS(LEFT_GUI))) C_BRIGHTNESS_AUTO    &kp ASTERISK  &kp N1    &kp N2  &kp N3  &kp PLUS   &none
                                              &none         &none            &none                                         &kp N0        &kp BSPC  &none
@@ -242,7 +242,7 @@
             bindings = <
 &bt BT_CLR    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &none  &none  &none  &none  &none  &none
 &out OUT_USB  &out OUT_BLE  &none         &none         &none         &none           &none  &none  &none  &none  &none  &none
-&none         &none         &none         &none         &none         &none           &none  &none  &none  &none  &none  &none
+&kp S         &none         &none         &none         &none         &none           &none  &none  &none  &none  &none  &none
                                           &none         &none         &none           &none  &none  &none
             >;
         };
