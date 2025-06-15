@@ -150,19 +150,19 @@
 
         MAC_BASE {
             bindings = <
-&none  &kp Q             &kp W  &kp E    &kp R    &kp T      &kp Y            &kp U       &kp I      &kp O    &kp P     &kp MINUS
-&none  &kp A             &kp S  &kp D    &kp F    &kp G      &kp H            &kp J       &kp K      &kp L    &kp SEMI  &kp SQT
-&none  &mt LEFT_SHIFT Z  &kp X  &kp C    &kp V    &kp B      &kp N            &kp M       &kp COMMA  &kp DOT  &kp FSLH  &none
-                                &lt 4 S  &lt 9 S  &lt 2 R    &kp RIGHT_SHIFT  &lt 7 BSPC  &lt 6 B
+&none  &kp Q             &kp W  &kp E    &kp R     &kp T      &kp Y            &kp U       &kp I      &kp O    &kp P     &kp MINUS
+&none  &kp A             &kp S  &kp D    &kp F     &kp G      &kp H            &kp J       &kp K      &kp L    &kp SEMI  &kp SQT
+&none  &mt LEFT_SHIFT Z  &kp X  &kp C    &kp V     &kp B      &kp N            &kp M       &kp COMMA  &kp DOT  &kp FSLH  &none
+                                &lt 4 S  &lt 10 S  &lt 2 R    &kp RIGHT_SHIFT  &lt 8 BSPC  &lt 6 B
             >;
         };
 
         WINDOW-BASE {
             bindings = <
-&none  &kp Q             &kp W  &kp E    &kp R    &kp T      &kp Y            &kp U       &kp I      &kp O    &kp P     &kp MINUS
-&none  &kp A             &kp S  &kp D    &kp F    &kp G      &kp H            &kp J       &kp K      &kp L    &kp SEMI  &kp SQT
-&none  &mt LEFT_SHIFT Z  &kp X  &kp C    &kp V    &kp B      &kp N            &kp M       &kp COMMA  &kp DOT  &kp FSLH  &none
-                                &lt 4 S  &lt 9 S  &lt 2 R    &kp RIGHT_SHIFT  &lt 7 BSPC  &lt 6 B
+&none  &kp Q             &kp W  &kp E    &kp R     &kp T      &kp Y                  &kp U       &kp I      &kp O    &kp P     &kp MINUS
+&none  &kp A             &kp S  &kp D    &kp F     &kp G      &kp H                  &kp J       &kp K      &kp L    &kp SEMI  &kp SQT
+&none  &mt LEFT_SHIFT Z  &kp X  &kp C    &kp V     &kp B      &kp N                  &kp M       &kp COMMA  &kp DOT  &kp FSLH  &none
+                                &lt 5 S  &lt 10 S  &lt 3 R    &mt RIGHT_SHIFT SPACE  &lt 8 BSPC  &lt 7 B
             >;
         };
 
@@ -211,6 +211,15 @@
             >;
         };
 
+        wVS+FN {
+            bindings = <
+&none  &none      &none     &none     &none      &none    &none  &kp F7  &kp F8  &kp F9  &kp F10  &none
+&none  &none      &none     &none     &none      &none    &none  &kp F4  &kp F5  &kp F6  &kp F11  &none
+&none  &kp LSHFT  &kp LGUI  &kp LALT  &kp LCTRL  &none    &none  &kp F1  &kp F2  &kp F3  &kp F12  &none
+                            &none     &none      &none    &none  &none   &none
+            >;
+        };
+
         Sym+delim {
             bindings = <
 &none  &none  &none  &none  &none  &none    &kp GRAVE         &kp PERCENT            &kp EXCLAMATION  &kp TILDE          &kp PIPE       &none
@@ -235,15 +244,6 @@
 &out OUT_USB  &out OUT_BLE  &none         &none         &none         &none           &none  &none  &none  &none  &none  &none
 &none         &none         &none         &none         &none         &none           &none  &none  &none  &none  &none  &none
                                           &none         &none         &none           &none  &none  &none
-            >;
-        };
-
-        wVS+FN {
-            bindings = <
-&none  &none      &none     &none     &none      &none    &none  &kp F7  &kp F8  &kp F9  &kp F10  &none
-&none  &none      &none     &none     &none      &none    &none  &kp F4  &kp F5  &kp F6  &kp F11  &none
-&none  &kp LSHFT  &kp LGUI  &kp LALT  &kp LCTRL  &none    &none  &kp F1  &kp F2  &kp F3  &kp F12  &none
-                            &none     &none      &none    &none  &none   &none
             >;
         };
     };
