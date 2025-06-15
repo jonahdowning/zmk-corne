@@ -106,14 +106,19 @@
             key-positions = <20 21>;
         };
 
-        test {
+        toMacBASE {
             bindings = <&to 0>;
             key-positions = <3 0 5>;
         };
 
-        test1 {
-            bindings = <&to 0>;
+        toWindowBASE {
+            bindings = <&to 1>;
             key-positions = <24 27 29>;
+        };
+
+        toSYS {
+            bindings = <&to 10>;
+            key-positions = <12 15 17>;
         };
     };
 
