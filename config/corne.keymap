@@ -71,31 +71,6 @@
             key-positions = <36 41>;
         };
 
-        win1 {
-            bindings = <&kp LG(NUMBER_1)>;
-            key-positions = <19 31>;
-        };
-
-        win2 {
-            bindings = <&kp LG(NUMBER_2)>;
-            key-positions = <20 32>;
-        };
-
-        win3 {
-            bindings = <&kp LG(NUMBER_3)>;
-            key-positions = <21 33>;
-        };
-
-        win4 {
-            bindings = <&kp LG(NUMBER_4)>;
-            key-positions = <22 34>;
-        };
-
-        win5 {
-            bindings = <&kp LG(N5)>;
-            key-positions = <23 35>;
-        };
-
         l_shift {
             bindings = <&kp LEFT_SHIFT>;
             key-positions = <14 15>;
@@ -119,6 +94,11 @@
         toSYS {
             bindings = <&to 10>;
             key-positions = <12 15 17>;
+        };
+
+        caps_word {
+            bindings = <&caps_word>;
+            key-positions = <2 3 8 9>;
         };
     };
 
