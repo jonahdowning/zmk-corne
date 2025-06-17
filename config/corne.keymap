@@ -17,7 +17,10 @@
     quick-tap-ms = <175>;
 };
 
-&sk { quick-release; };
+&sk {
+    quick-release;
+    lazy;
+};
 
 / {
     combos {
@@ -116,7 +119,7 @@
 
         stickyshift {
             bindings = <&sk LEFT_SHIFT>;
-            key-positions = <39 38>;
+            key-positions = <19 20>;
         };
 
         mSwitchApps {
@@ -141,6 +144,11 @@
             bindings = <&kp LA(TAB)>;
             key-positions = <32 33>;
             layers = <0 2 4 6 8 9>;
+        };
+
+        altSitickyShift {
+            bindings = <&sk LEFT_SHIFT>;
+            key-positions = <16 15>;
         };
     };
 
