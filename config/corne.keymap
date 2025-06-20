@@ -183,6 +183,16 @@
 
             label = "MDELLINE";
         };
+
+        VS_FindAndReplace: VS_FindAndReplace {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LC(F) &kp TAB &kp ENTER &kp TAB &kp TAB>;
+
+            label = "VS_FINDANDREPLACE";
+        };
     };
 
     keymap {
