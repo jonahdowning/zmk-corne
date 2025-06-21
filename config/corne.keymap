@@ -263,19 +263,19 @@
 
         wVS+FN {
             bindings = <
-&none  &none      &none     &none        &none           &none    &none  &kp F7  &kp F8  &kp F9  &kp F10  &none
-&none  &none      &none     &kp LA(F10)  &kp LS(LC(F5))  &none    &none  &kp F4  &kp F5  &kp F6  &kp F11  &none
-&none  &kp LSHFT  &kp LGUI  &kp LALT     &kp LCTRL       &none    &none  &kp F1  &kp F2  &kp F3  &kp F12  &none
-                            &none        &none           &none    &none  &none   &none
+&none  &none      &none     &none     &kp LA(F10)         &kp LA(LC(F5))    &none  &kp F7  &kp F8  &kp F9  &kp F10  &none
+&none  &none      &none     &none     &VS_FindAndReplace  &none             &none  &kp F4  &kp F5  &kp F6  &kp F11  &none
+&none  &kp LSHFT  &kp LGUI  &kp LALT  &kp LCTRL           &none             &none  &kp F1  &kp F2  &kp F3  &kp F12  &none
+                            &none     &none               &none             &none  &none   &none
             >;
         };
 
         Sym+delim {
             bindings = <
-&none  &none  &none  &none  &none  &none    &kp GRAVE         &kp PERCENT            &kp EXCLAMATION  &kp TILDE          &kp PIPE       &none
-&none  &none  &none  &none  &none  &none    &kp LESS_THAN     &kp LEFT_PARENTHESIS   &kp LEFT_BRACE   &kp LEFT_BRACKET   &kp AMPERSAND  &kp DOLLAR
-&none  &none  &none  &none  &none  &none    &kp GREATER_THAN  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &kp AT_SIGN    &none
-                     &none  &none  &none    &none             &none                  &none
+&none  &none      &none     &none     &none      &none    &kp GRAVE         &kp PERCENT            &kp EXCLAMATION  &kp TILDE          &kp PIPE       &none
+&none  &none      &none     &none     &none      &none    &kp LESS_THAN     &kp LEFT_PARENTHESIS   &kp LEFT_BRACE   &kp LEFT_BRACKET   &kp AMPERSAND  &kp DOLLAR
+&none  &kp LSHFT  &kp LGUI  &kp LALT  &kp LCTRL  &none    &kp GREATER_THAN  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &kp AT_SIGN    &none
+                            &none     &none      &none    &none             &none                  &none
             >;
         };
 
