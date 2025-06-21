@@ -203,7 +203,7 @@
 &none                 &kp Q             &kp W           &kp E           &kp R               &kp T                             &kp Y                            &kp U                &kp I                &kp O                 &kp P                  &kp MINUS
 &none                 &kp A             &kp S           &kp D           &kp F               &kp G                             &kp H                            &kp J                &kp K                &kp L                 &kp SEMI               &kp SQT
 &kp LA(LS(LEFT_GUI))  &mt LEFT_SHIFT Z  &mt LEFT_GUI X  &mt LEFT_ALT C  &mt LEFT_CONTROL V  &mt LS(LA(LC(LG(LEFT_GUI)))) B    &mt LC(LA(LS(LG(RIGHT_GUI)))) N  &mt RIGHT_CONTROL M  &mt RIGHT_ALT COMMA  &mt RIGHT_GUI PERIOD  &mt RIGHT_SHIFT SLASH  &none
-                                                        &lt 4 S         &lt 9 TAB           &lt 2 R                           &kp SPACE                        &lt 8 BSPC           &lt 6 B
+                                                        &lt 4 ESCAPE    &lt 9 TAB           &lt 2 R                           &kp SPACE                        &lt 8 BSPC           &lt 6 DELETE
             >;
         };
 
@@ -212,7 +212,7 @@
 &none  &kp Q             &kp W           &kp E           &kp R               &kp T                             &kp Y                            &kp U               &kp I                &kp O              &kp P                 &kp MINUS
 &none  &kp A             &kp S           &kp D           &kp F               &kp G                             &kp H                            &kp J               &kp K                &kp L              &kp SEMI              &kp SQT
 &none  &mt LEFT_SHIFT Z  &mt LEFT_GUI X  &mt LEFT_ALT C  &mt LEFT_CONTROL V  &mt LS(LA(LC(LG(LEFT_GUI)))) B    &mt RS(RA(RC(RG(RIGHT_GUI)))) N  &mt LEFT_CONTROL M  &mt RIGHT_ALT COMMA  &mt RIGHT_GUI DOT  &mt RIGHT_SHIFT FSLH  &none
-                                         &lt 5 S         &lt 9 S             &lt 3 R                           &kp SPACE                        &lt 8 BSPC          &lt 7 B
+                                         &lt 5 ESCAPE    &lt 9 TAB           &lt 3 R                           &kp SPACE                        &lt 8 BSPC          &lt 7 DELETE
             >;
         };
 
