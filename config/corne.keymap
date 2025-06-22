@@ -210,7 +210,7 @@
 
         MAC_BASE {
             bindings = <
-&none                 &kp Q             &kp W           &kp E           &kp R               &kp T                             &kp Y                            &kp U                &kp I                &kp O                 &kp P                  &kp MINUS
+&kp ESC               &kp Q             &kp W           &kp E           &kp R               &kp T                             &kp Y                            &kp U                &kp I                &kp O                 &kp P                  &kp MINUS
 &none                 &kp A             &kp S           &kp D           &kp F               &kp G                             &kp H                            &kp J                &kp K                &kp L                 &kp SEMI               &kp SQT
 &kp LA(LS(LEFT_GUI))  &mt LEFT_SHIFT Z  &mt LEFT_GUI X  &mt LEFT_ALT C  &mt LEFT_CONTROL V  &mt LS(LA(LC(LG(LEFT_GUI)))) B    &mt LC(LA(LS(LG(RIGHT_GUI)))) N  &mt RIGHT_CONTROL M  &mt RIGHT_ALT COMMA  &mt RIGHT_GUI PERIOD  &mt RIGHT_SHIFT SLASH  &none
                                                         &lt 6 ESCAPE    &lt 11 TAB          &lt 4 E                           &kp SPACE                        &lt 10 BSPC          &lt 8 DELETE
@@ -219,16 +219,16 @@
 
         WINDOW-BASE {
             bindings = <
-&none  &kp Q             &kp W           &kp E           &kp R               &kp T                             &kp Y                            &kp U               &kp I                &kp O              &kp P                 &kp MINUS
-&none  &kp A             &kp S           &kp D           &kp F               &kp G                             &kp H                            &kp J               &kp K                &kp L              &kp SEMI              &kp SQT
-&none  &mt LEFT_SHIFT Z  &mt LEFT_GUI X  &mt LEFT_ALT C  &mt LEFT_CONTROL V  &mt LS(LA(LC(LG(LEFT_GUI)))) B    &mt RS(RA(RC(RG(RIGHT_GUI)))) N  &mt LEFT_CONTROL M  &mt RIGHT_ALT COMMA  &mt RIGHT_GUI DOT  &mt RIGHT_SHIFT FSLH  &none
-                                         &lt 7 ESCAPE    &lt 11 TAB          &lt 6 E                           &kp SPACE                        &lt 10 BSPC         &lt 9 DELETE
+&kp ESC  &kp Q             &kp W           &kp E           &kp R               &kp T                             &kp Y                            &kp U               &kp I                &kp O              &kp P                 &kp MINUS
+&none    &kp A             &kp S           &kp D           &kp F               &kp G                             &kp H                            &kp J               &kp K                &kp L              &kp SEMI              &kp SQT
+&none    &mt LEFT_SHIFT Z  &mt LEFT_GUI X  &mt LEFT_ALT C  &mt LEFT_CONTROL V  &mt LS(LA(LC(LG(LEFT_GUI)))) B    &mt RS(RA(RC(RG(RIGHT_GUI)))) N  &mt LEFT_CONTROL M  &mt RIGHT_ALT COMMA  &mt RIGHT_GUI DOT  &mt RIGHT_SHIFT FSLH  &none
+                                           &lt 7 ESCAPE    &lt 11 TAB          &lt 6 E                           &kp SPACE                        &lt 10 BSPC         &lt 9 DELETE
             >;
         };
 
         mCSTR {
             bindings = <
-&none                 &kp B             &kp Y           &kp D           &kp L               &kp FSLH                                  &kp Q                                &kp F                &kp O                &kp U                 &kp Z              &kp EQUAL
+&kp ESC               &kp B             &kp Y           &kp D           &kp L               &kp FSLH                                  &kp Q                                &kp F                &kp O                &kp U                 &kp Z              &kp EQUAL
 &none                 &kp C             &kp S           &kp T           &kp R               &kp J                                     &kp K                                &kp N                &kp A                &kp I                 &kp H              &kp SQT
 &kp LA(LS(LEFT_GUI))  &mt LEFT_SHIFT V  &mt LEFT_GUI W  &mt LEFT_ALT G  &mt LEFT_CONTROL M  &mt LS(LA(LC(LG(LEFT_GUI)))) SEMICOLON    &mt LC(LA(LS(LG(RIGHT_GUI)))) MINUS  &mt RIGHT_CONTROL P  &mt RIGHT_ALT COMMA  &mt RIGHT_GUI PERIOD  &mt RIGHT_SHIFT X  &none
                                                         &lt 6 ESCAPE    &lt 11 TAB          &lt 4 E                                   &kp SPACE                            &lt 10 BSPC          &lt 8 DELETE
