@@ -54,25 +54,25 @@
         mHomeRowApp {
             bindings = <&kp LC(LA(LS(LG(F))))>;
             key-positions = <38 16>;
-            layers = <0 4 6 8 10 11>;
+            layers = <0 4 6 8 11 13>;
         };
 
         mDictation {
             bindings = <&kp LS(LG(LC(LA(V))))>;
             key-positions = <13 14 15>;
-            layers = <0 4 6 8 10 11>;
+            layers = <0 4 6 8 11 13>;
         };
 
         mLeaderKey {
             bindings = <&kp LS(LA(LG(RIGHT)))>;
             key-positions = <39 20>;
-            layers = <0 4 6 8 10 11>;
+            layers = <0 4 6 8 11 13>;
         };
 
         mMousless {
             bindings = <&kp LA(LC(LS(LG(RIGHT))))>;
             key-positions = <39 19>;
-            layers = <0 4 6 8 10 11>;
+            layers = <0 4 6 8 11 13>;
         };
 
         l_shift {
@@ -96,7 +96,7 @@
         };
 
         toSYS {
-            bindings = <&to 12>;
+            bindings = <&to 14>;
             key-positions = <12 15 17>;
         };
 
@@ -108,13 +108,13 @@
         mDelWord {
             bindings = <&kp LA(BACKSPACE)>;
             key-positions = <37 40>;
-            layers = <0 4 6 8 10 11>;
+            layers = <0 4 6 8 11 13>;
         };
 
         wDelWord {
             bindings = <&kp LC(BACKSPACE)>;
             key-positions = <40 37>;
-            layers = <1 6 7 9 10 11>;
+            layers = <1 6 7 9 11 13>;
         };
 
         stickyshift {
@@ -125,25 +125,25 @@
         mSwitchApps {
             bindings = <&kp LC(TAB)>;
             key-positions = <32 33>;
-            layers = <0 4 6 8 10 11>;
+            layers = <0 4 6 8 11 13>;
         };
 
         mSwitchPrevrsApp {
             bindings = <&kp LC(LS(TAB))>;
             key-positions = <32 31>;
-            layers = <0 4 6 8 10 11>;
+            layers = <0 4 6 8 11 13>;
         };
 
         wSwitchPrevApp {
             bindings = <&kp LS(LA(TAB))>;
             key-positions = <32 31>;
-            layers = <0 4 6 8 10 11>;
+            layers = <0 4 6 8 11 13>;
         };
 
         wSwitchApp {
             bindings = <&kp LA(TAB)>;
             key-positions = <32 33>;
-            layers = <0 4 6 8 10 11>;
+            layers = <0 4 6 8 11 13>;
         };
 
         altSitickyShift {
@@ -210,10 +210,10 @@
 
         MAC_BASE {
             bindings = <
-&kp ESC               &kp Q             &kp W           &kp E           &kp R               &kp T                             &kp Y                            &kp U                &kp I                &kp O                 &kp P                  &kp MINUS
-&none                 &kp A             &kp S           &kp D           &kp F               &kp G                             &kp H                            &kp J                &kp K                &kp L                 &kp SEMI               &kp SQT
-&kp LA(LS(LEFT_GUI))  &mt LEFT_SHIFT Z  &mt LEFT_GUI X  &mt LEFT_ALT C  &mt LEFT_CONTROL V  &mt LS(LA(LC(LG(LEFT_GUI)))) B    &mt LC(LA(LS(LG(RIGHT_GUI)))) N  &mt RIGHT_CONTROL M  &mt RIGHT_ALT COMMA  &mt RIGHT_GUI PERIOD  &mt RIGHT_SHIFT SLASH  &none
-                                                        &lt 6 ESCAPE    &lt 11 TAB          &lt 4 E                           &kp SPACE                        &lt 10 BSPC          &lt 8 DELETE
+&kp ESC               &kp Q             &kp W               &kp E           &kp R           &kp T                             &kp Y                            &kp U            &kp I                &kp O                     &kp P                  &kp MINUS
+&none                 &kp A             &kp S               &kp D           &kp F           &kp G                             &kp H                            &kp J            &kp K                &kp L                     &kp SEMI               &kp SQT
+&kp LA(LS(LEFT_GUI))  &mt LEFT_SHIFT Z  &mt LEFT_CONTROL X  &mt LEFT_ALT C  &mt LEFT_GUI V  &mt LS(LA(LC(LG(LEFT_GUI)))) B    &mt LC(LA(LS(LG(RIGHT_GUI)))) N  &mt RIGHT_GUI M  &mt RIGHT_ALT COMMA  &mt RIGHT_CONTROL PERIOD  &mt RIGHT_SHIFT SLASH  &none
+                                                            &lt 6 ESCAPE    &lt 13 TAB      &lt 4 E                           &kp SPACE                        &lt 11 BSPC      &lt 8 DELETE
             >;
         };
 
@@ -222,7 +222,7 @@
 &kp ESC  &kp Q             &kp W           &kp E           &kp R               &kp T                             &kp Y                            &kp U               &kp I                &kp O              &kp P                 &kp MINUS
 &none    &kp A             &kp S           &kp D           &kp F               &kp G                             &kp H                            &kp J               &kp K                &kp L              &kp SEMI              &kp SQT
 &none    &mt LEFT_SHIFT Z  &mt LEFT_GUI X  &mt LEFT_ALT C  &mt LEFT_CONTROL V  &mt LS(LA(LC(LG(LEFT_GUI)))) B    &mt RS(RA(RC(RG(RIGHT_GUI)))) N  &mt LEFT_CONTROL M  &mt RIGHT_ALT COMMA  &mt RIGHT_GUI DOT  &mt RIGHT_SHIFT FSLH  &none
-                                           &lt 7 ESCAPE    &lt 11 TAB          &lt 6 E                           &kp SPACE                        &lt 10 BSPC         &lt 9 DELETE
+                                           &lt 7 ESCAPE    &lt 13 TAB          &lt 6 E                           &kp SPACE                        &lt 11 BSPC         &lt 9 DELETE
             >;
         };
 
@@ -231,7 +231,7 @@
 &kp ESC               &kp B             &kp Y           &kp D           &kp L               &kp FSLH                                  &kp Q                                &kp F                &kp O                &kp U                 &kp Z              &kp EQUAL
 &none                 &kp C             &kp S           &kp T           &kp R               &kp J                                     &kp K                                &kp N                &kp A                &kp I                 &kp H              &kp SQT
 &kp LA(LS(LEFT_GUI))  &mt LEFT_SHIFT V  &mt LEFT_GUI W  &mt LEFT_ALT G  &mt LEFT_CONTROL M  &mt LS(LA(LC(LG(LEFT_GUI)))) SEMICOLON    &mt LC(LA(LS(LG(RIGHT_GUI)))) MINUS  &mt RIGHT_CONTROL P  &mt RIGHT_ALT COMMA  &mt RIGHT_GUI PERIOD  &mt RIGHT_SHIFT X  &none
-                                                        &lt 6 ESCAPE    &lt 11 TAB          &lt 4 E                                   &kp SPACE                            &lt 10 BSPC          &lt 8 DELETE
+                                                        &lt 6 ESCAPE    &lt 13 TAB          &lt 4 E                                   &kp SPACE                            &lt 11 BSPC          &lt 8 DELETE
             >;
         };
 
@@ -240,7 +240,7 @@
 &none                 &kp B             &kp Y           &kp D           &kp L               &kp FSLH                                  &kp Q                                &kp F                &kp O                &kp U                 &kp Z              &kp EQUAL
 &none                 &kp C             &kp S           &kp T           &kp R               &kp J                                     &kp K                                &kp N                &kp A                &kp I                 &kp H              &kp SQT
 &kp LA(LS(LEFT_GUI))  &mt LEFT_SHIFT V  &mt LEFT_GUI W  &mt LEFT_ALT G  &mt LEFT_CONTROL M  &mt LS(LA(LC(LG(LEFT_GUI)))) SEMICOLON    &mt LC(LA(LS(LG(RIGHT_GUI)))) MINUS  &mt RIGHT_CONTROL P  &mt RIGHT_ALT COMMA  &mt RIGHT_GUI PERIOD  &mt RIGHT_SHIFT X  &none
-                                                        &lt 7 ESCAPE    &lt 11 TAB          &lt 6 E                                   &kp SPACE                            &lt 10 BSPC          &lt 9 DELETE
+                                                        &lt 7 ESCAPE    &lt 13 TAB          &lt 6 E                                   &kp SPACE                            &lt 11 BSPC          &lt 9 DELETE
             >;
         };
 
@@ -298,7 +298,16 @@
             >;
         };
 
-        Sym+delim {
+        mSym+Delim {
+            bindings = <
+&none  &none      &none             &none     &none         &none    &kp POUND         &kp PERCENT            &kp EXCLAMATION  &kp TILDE          &kp PIPE       &kp GRAVE
+&none  &none      &none             &none     &none         &none    &kp LESS_THAN     &kp LEFT_PARENTHESIS   &kp LEFT_BRACE   &kp LEFT_BRACKET   &kp AMPERSAND  &kp DOLLAR
+&none  &kp LSHFT  &kp LEFT_CONTROL  &kp LALT  &kp LEFT_GUI  &none    &kp GREATER_THAN  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &kp AT_SIGN    &none
+                                    &none     &none         &none    &none             &none                  &none
+            >;
+        };
+
+        wSym+delim {
             bindings = <
 &none  &none      &none     &none     &none      &none    &kp POUND         &kp PERCENT            &kp EXCLAMATION  &kp TILDE          &kp PIPE       &kp GRAVE
 &none  &none      &none     &none     &none      &none    &kp LESS_THAN     &kp LEFT_PARENTHESIS   &kp LEFT_BRACE   &kp LEFT_BRACKET   &kp AMPERSAND  &kp DOLLAR
@@ -307,7 +316,16 @@
             >;
         };
 
-        Media+Num {
+        mMedia+Num {
+            bindings = <
+&none                 &none      &kp K_MUTE        &kp C_VOL_DN  &kp C_VOLUME_UP  &kp C_BRIGHTNESS_INC                          &kp ASTERISK  &kp N7    &kp N8  &kp N9  &kp SLASH  &none
+&none                 &none      &kp C_PREV        &kp C_PLAY    &kp C_NEXT       &kp C_BRIGHTNESS_DEC                          &kp DOT       &kp N4    &kp N5  &kp N6  &kp EQUAL  &none
+&kp LS(LA(LEFT_GUI))  &kp LSHFT  &kp LEFT_CONTROL  &kp LALT      &kp LEFT_GUI     &mt LC(LA(LS(LEFT_GUI))) C_BRIGHTNESS_AUTO    &kp PLUS      &kp N1    &kp N2  &kp N3  &kp MINUS  &none
+                                                   &none         &none            &none                                         &kp N0        &kp BSPC  &none
+            >;
+        };
+
+        wMedia+Num {
             bindings = <
 &none                 &none      &kp K_MUTE  &kp C_VOL_DN  &kp C_VOLUME_UP  &kp C_BRIGHTNESS_INC                          &kp ASTERISK  &kp N7    &kp N8  &kp N9  &kp SLASH  &none
 &none                 &none      &kp C_PREV  &kp C_PLAY    &kp C_NEXT       &kp C_BRIGHTNESS_DEC                          &kp DOT       &kp N4    &kp N5  &kp N6  &kp EQUAL  &none
