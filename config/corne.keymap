@@ -114,7 +114,7 @@
         wDelWord {
             bindings = <&kp LC(BACKSPACE)>;
             key-positions = <40 37>;
-            layers = <1 6 7 9 11 13>;
+            layers = <1 7 9 11 13>;
         };
 
         stickyshift {
