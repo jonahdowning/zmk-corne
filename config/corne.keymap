@@ -123,13 +123,13 @@
         };
 
         mSwitchApps {
-            bindings = <&kp LC(TAB)>;
+            bindings = <&kp LG(TAB)>;
             key-positions = <32 33>;
             layers = <0 4 6 8 11 13>;
         };
 
         mSwitchPrevrsApp {
-            bindings = <&kp LC(LS(TAB))>;
+            bindings = <&kp LS(LG(TAB))>;
             key-positions = <32 31>;
             layers = <0 4 6 8 11 13>;
         };
@@ -228,10 +228,10 @@
 
         mCSTR {
             bindings = <
-&kp ESC               &kp B             &kp Y           &kp D           &kp L               &kp FSLH                                  &kp Q                                &kp F                &kp O                &kp U                 &kp Z              &kp EQUAL
-&none                 &kp C             &kp S           &kp T           &kp R               &kp J                                     &kp K                                &kp N                &kp A                &kp I                 &kp H              &kp SQT
-&kp LA(LS(LEFT_GUI))  &mt LEFT_SHIFT V  &mt LEFT_GUI W  &mt LEFT_ALT G  &mt LEFT_CONTROL M  &mt LS(LA(LC(LG(LEFT_GUI)))) SEMICOLON    &mt LC(LA(LS(LG(RIGHT_GUI)))) MINUS  &mt RIGHT_CONTROL P  &mt RIGHT_ALT COMMA  &mt RIGHT_GUI PERIOD  &mt RIGHT_SHIFT X  &none
-                                                        &lt 6 ESCAPE    &lt 13 TAB          &lt 4 E                                   &kp SPACE                            &lt 11 BSPC          &lt 8 DELETE
+&kp ESC               &kp B             &kp Y               &kp D           &kp L           &kp FSLH                                  &kp Q                                &kp F            &kp O                &kp U                     &kp Z              &kp EQUAL
+&none                 &kp C             &kp S               &kp T           &kp R           &kp J                                     &kp K                                &kp N            &kp A                &kp I                     &kp H              &kp SQT
+&kp LA(LS(LEFT_GUI))  &mt LEFT_SHIFT V  &mt LEFT_CONTROL W  &mt LEFT_ALT G  &mt LEFT_GUI M  &mt LS(LA(LC(LG(LEFT_GUI)))) SEMICOLON    &mt LC(LA(LS(LG(RIGHT_GUI)))) MINUS  &mt RIGHT_GUI P  &mt RIGHT_ALT COMMA  &mt RIGHT_CONTROL PERIOD  &mt RIGHT_SHIFT X  &none
+                                                            &lt 6 ESCAPE    &lt 13 TAB      &lt 4 E                                   &kp SPACE                            &lt 11 BSPC      &lt 8 DELETE
             >;
         };
 
@@ -246,10 +246,10 @@
 
         mShort+Nav {
             bindings = <
-&kp LS(LG(LC(LA(B))))         &kp LG(LC(LA(LS(GRAVE))))     &kp LC(LBKT)   &kp LC(RBKT)  &kp LC(R)         &kp LC(X)                           &kp LS(TAB)   &kp PG_DN  &kp PG_UP  &kp TAB        &kp ESC  &none
-&kp LS(LA(LC(LG(NUMBER_4))))  &kp LG(LC(LA(LS(NUMBER_2))))  &kp LS(LC(Z))  &kp LC(Z)     &kp LC(C)         &kp LC(V)                           &kp LEFT      &kp DOWN   &kp UP     &kp RIGHT      &kp RET  &none
-&kp LA(LS(LEFT_COMMAND))      &kp RSHFT                     &kp LEFT_GUI   &kp LALT      &kp LEFT_CONTROL  &kp LS(LA(LC(LG(LEFT_COMMAND))))    &kp LC(LEFT)  &mDelLine  &none      &kp LC(RIGHT)  &none    &none
-                                                                           &none         &none             &none                               &kp SPACE     &kp BSPC   &kp DEL
+&kp LS(LG(LC(LA(B))))         &kp LG(LC(LA(LS(GRAVE))))     &kp LC(LBKT)      &kp LC(RBKT)  &kp LC(R)         &kp LC(X)                           &kp LS(TAB)   &kp PG_DN  &kp PG_UP  &kp TAB        &kp ESC  &none
+&kp LS(LA(LC(LG(NUMBER_4))))  &kp LG(LC(LA(LS(NUMBER_2))))  &kp LS(LC(Z))     &kp LC(Z)     &kp LC(C)         &kp LC(V)                           &kp LEFT      &kp DOWN   &kp UP     &kp RIGHT      &kp RET  &none
+&kp LA(LS(LEFT_COMMAND))      &kp RSHFT                     &kp LEFT_CONTROL  &kp LALT      &kp LEFT_COMMAND  &kp LS(LA(LC(LG(LEFT_COMMAND))))    &kp LC(LEFT)  &mDelLine  &none      &kp LC(RIGHT)  &none    &none
+                                                                              &none         &none             &none                               &kp SPACE     &kp BSPC   &kp DEL
             >;
         };
 
@@ -282,10 +282,10 @@
 
         mVS+FN {
             bindings = <
-&none  &none      &none     &none     &none      &none    &none  &kp F7  &kp F8  &kp F9  &kp F10  &none
-&none  &none      &none     &none     &none      &none    &none  &kp F4  &kp F5  &kp F6  &kp F11  &none
-&none  &kp LSHFT  &kp LGUI  &kp LALT  &kp LCTRL  &none    &none  &kp F1  &kp F2  &kp F3  &kp F12  &none
-                            &none     &none      &none    &none  &none   &none
+&none  &none      &none             &none     &none         &none    &none  &kp F7  &kp F8  &kp F9  &kp F10  &none
+&none  &none      &none             &none     &none         &none    &none  &kp F4  &kp F5  &kp F6  &kp F11  &none
+&none  &kp LSHFT  &kp LEFT_CONTROL  &kp LALT  &kp LEFT_GUI  &none    &none  &kp F1  &kp F2  &kp F3  &kp F12  &none
+                                    &none     &none         &none    &none  &none   &none
             >;
         };
 
