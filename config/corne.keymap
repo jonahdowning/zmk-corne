@@ -246,9 +246,9 @@
 
         mShort+Nav {
             bindings = <
-&kp LS(LG(LC(LA(B))))         &kp LG(LC(LA(LS(GRAVE))))     &kp LC(LBKT)      &kp LC(RBKT)  &kp LC(R)         &kp LC(X)                           &kp LS(TAB)   &kp PG_DN  &kp PG_UP  &kp TAB        &kp ESC  &none
-&kp LS(LA(LC(LG(NUMBER_4))))  &kp LG(LC(LA(LS(NUMBER_2))))  &kp LS(LC(Z))     &kp LC(Z)     &kp LC(C)         &kp LC(V)                           &kp LEFT      &kp DOWN   &kp UP     &kp RIGHT      &kp RET  &none
-&kp LA(LS(LEFT_COMMAND))      &kp RSHFT                     &kp LEFT_CONTROL  &kp LALT      &kp LEFT_COMMAND  &kp LS(LA(LC(LG(LEFT_COMMAND))))    &kp LC(LEFT)  &mDelLine  &none      &kp LC(RIGHT)  &none    &none
+&kp LS(LG(LC(LA(B))))         &kp LG(LC(LA(LS(GRAVE))))     &kp LG(LBKT)      &kp LG(RBKT)  &kp LG(R)         &kp LG(X)                           &kp LS(TAB)   &kp PG_DN  &kp PG_UP  &kp TAB        &kp ESC  &none
+&kp LS(LA(LC(LG(NUMBER_4))))  &kp LG(LC(LA(LS(NUMBER_2))))  &kp LS(LG(Z))     &kp LG(Z)     &kp LG(C)         &kp LG(V)                           &kp LEFT      &kp DOWN   &kp UP     &kp RIGHT      &kp RET  &none
+&kp LA(LS(LEFT_COMMAND))      &kp RSHFT                     &kp LEFT_CONTROL  &kp LALT      &kp LEFT_COMMAND  &kp LS(LA(LC(LG(LEFT_COMMAND))))    &kp LG(LEFT)  &mDelLine  &none      &kp LG(RIGHT)  &none    &none
                                                                               &none         &none             &none                               &kp SPACE     &kp BSPC   &kp DEL
             >;
         };
