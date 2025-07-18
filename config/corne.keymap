@@ -199,9 +199,19 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kp LC(F) &kp TAB &kp ENTER &kp TAB &kp TAB>;
+                <&kp LC(F) &kp LS(TAB) &kp ENTER &kp TAB &kp TAB>;
 
             label = "VS_FINDANDREPLACE";
+        };
+
+        wJS_logToConsole: wJS_logToConsole {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_tap>,
+                <&kp RET &kp C &kp O &kp N &kp S &kp O &kp L &kp E &kp DOT &kp L &kp O &kp G &kp LPAR &kp DQT &kp DQT &kp COMMA &kp RPAR &kp SEMI &kp LEFT &kp LEFT &kp LEFT &kp LEFT>;
+
+            label = "WJS_LOGTOCONSOLE";
         };
     };
 
