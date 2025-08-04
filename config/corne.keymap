@@ -64,7 +64,7 @@
         };
 
         mLeaderKey {
-            bindings = <&kp LS(LA(LG(RIGHT)))>;
+            bindings = <&kp LS(LA(LC(RIGHT)))>;
             key-positions = <39 20>;
             layers = <0 4 6 8 11 13>;
         };
