@@ -176,16 +176,6 @@
             label = "DEL_LINE";
         };
 
-        wbobb: mysterious {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_tap>,
-                <&kp P &kp R &kp I &kp N &kp T &kp SEMI &kp S &kp T &kp A &kp R &kp R &kp Y &kp N0 &kp SEMI &kp C &kp H &kp E &kp E &kp R &kp RETURN>;
-
-            label = "MYSTERIOUS";
-        };
-
         mDelLine: mDelLine {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -212,6 +202,13 @@
                 <&kp RET &kp C &kp O &kp N &kp S &kp O &kp L &kp E &kp DOT &kp L &kp O &kp G &kp LPAR &kp DQT &kp DQT &kp COMMA &kp RPAR &kp SEMI &kp LEFT &kp LEFT &kp LEFT &kp LEFT>;
 
             label = "WJS_LOGTOCONSOLE";
+        };
+
+        w_ctrlAltDel: w_ctrlAltDel {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(LA(DEL))>;
+            label = "W_CTRLALTDEL";
         };
     };
 
@@ -265,10 +262,10 @@
 
         wShort+Nav {
             bindings = <
-&none                     &none          &kp LA(LBKT)   &kp LA(RBKT)  &kp LC(R)         &kp LC(X)                           &kp LS(TAB)  &kp PG_DN  &kp PG_UP  &kp TAB    &kp ESC  &none
-&none                     &kp LG(LS(S))  &kp LS(LC(Z))  &kp LC(Z)     &kp LC(C)         &kp LC(V)                           &kp LEFT     &kp DOWN   &kp UP     &kp RIGHT  &kp RET  &none
-&kp LA(LS(LEFT_COMMAND))  &kp RSHFT      &kp LEFT_GUI   &kp LALT      &kp LEFT_CONTROL  &kp LS(LA(LC(LG(LEFT_COMMAND))))    &kp HOME     &wDelLine  &none      &kp END    &none    &none
-                                                        &wbobb        &none             &none                               &kp SPACE    &kp BSPC   &kp DEL
+&none                     &none          &kp LA(LBKT)   &kp LA(RBKT)   &kp LC(R)         &kp LC(X)                           &kp LS(TAB)  &kp PG_DN  &kp PG_UP  &kp TAB    &kp ESC  &none
+&none                     &kp LG(LS(S))  &kp LS(LC(Z))  &kp LC(Z)      &kp LC(C)         &kp LC(V)                           &kp LEFT     &kp DOWN   &kp UP     &kp RIGHT  &kp RET  &none
+&kp LA(LS(LEFT_COMMAND))  &kp RSHFT      &kp LEFT_GUI   &kp LALT       &kp LEFT_CONTROL  &kp LS(LA(LC(LG(LEFT_COMMAND))))    &kp HOME     &wDelLine  &none      &kp END    &none    &none
+                                                        &w_ctrlAltDel  &none             &none                               &kp SPACE    &kp BSPC   &kp DEL
             >;
         };
 
