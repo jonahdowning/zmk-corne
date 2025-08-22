@@ -108,13 +108,13 @@
         mDelWord {
             bindings = <&kp LA(BACKSPACE)>;
             key-positions = <37 40>;
-            layers = <0 4 6 8 11 13>;
+            layers = <0 4 6 8 11 13 2 10 12>;
         };
 
         wDelWord {
             bindings = <&kp LC(BACKSPACE)>;
             key-positions = <40 37>;
-            layers = <1 7 9 11 13>;
+            layers = <1 7 9 11 13 3 5>;
         };
 
         stickyshift {
@@ -207,14 +207,18 @@
         w_ctrlAltDel: w_ctrlAltDel {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LC(LA(DEL))>;
+            bindings = <&kp LC(LA(DEL))>, <&macro_tap>;
+
             label = "W_CTRLALTDEL";
         };
 
         w_f6WinSCPmacro: w_f6WinSCPmacro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LC(S) &kp LG(N7) &kp LC(A) &kp F5 &kp ENTER &sk LEFT_SHIFT>;
+            bindings =
+                <&macro_tap>,
+                <&kp LC(S) &kp LG(N7) &kp LC(A) &kp F5 &kp ENTER>;
+
             label = "W_F6WINSCPMACRO";
         };
     };
