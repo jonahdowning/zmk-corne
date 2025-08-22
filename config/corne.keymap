@@ -214,7 +214,7 @@
         w_f6WinSCPmacro: w_f6WinSCPmacro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp F6 &kp LC(A) &kp F5 &kp ENTER &sk LEFT_SHIFT>;
+            bindings = <&kp LC(S) &kp LG(N7) &kp LC(A) &kp F5 &kp ENTER &sk LEFT_SHIFT>;
             label = "W_F6WINSCPMACRO";
         };
     };
