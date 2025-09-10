@@ -86,12 +86,12 @@
         };
 
         toMacBASE {
-            bindings = <&to 0>;
+            bindings = <&goToMacos>;
             key-positions = <0 3 5>;
         };
 
         toWindowBASE {
-            bindings = <&to 1>;
+            bindings = <&goToWinProfile4>;
             key-positions = <24 27 29>;
         };
 
@@ -220,6 +220,20 @@
                 <&kp LC(S) &kp LG(N7) &kp LC(A) &kp F5 &kp ENTER>;
 
             label = "W_F6WINSCPMACRO";
+        };
+
+        goToMacos: goToMacos {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&bt BT_SEL 0 &out OUT_BLE &to 0>;
+            label = "GOTOMACOS";
+        };
+
+        goToWinProfile4: goToWinProfile4 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&bt BT_SEL 4 &out OUT_BLE &to 1>;
+            label = "GOTOWINPROFILE4";
         };
     };
 
