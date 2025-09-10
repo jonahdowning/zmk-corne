@@ -179,7 +179,7 @@
         mDelLine: mDelLine {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_tap>, <&kp LG(RIGHT) &kp LC(BACKSPACE)>;
+            bindings = <&macro_tap>, <&kp LG(RIGHT) &kp LG(BACKSPACE)>;
 
             label = "MDELLINE";
         };
