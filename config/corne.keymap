@@ -314,7 +314,7 @@
 &none  &none           &mmv MOVE_RIGHT  &mmv MOVE_UP     &mkp RCLK  &none    &kp LA(LS(LC(SPACE)))       &kp N1                 &kp N2                 &kp N3         &kp N4    &kp LS(LA(LC(P)))
 &none  &msc SCRL_UP    &mmv MOVE_LEFT   &mmv MOVE_DOWN   &mkp LCLK  &none    &kp H                       &kp J                  &kp K                  &kp L          &kp SEMI  &kp SQT
 &none  &msc SCRL_DOWN  &msc SCRL_LEFT   &msc SCRL_RIGHT  &mkp MCLK  &none    &kp LS(LA(LC(F)))           &kp LS(LA(LC(MINUS)))  &kp LA(LS(LC(EQUAL)))  &kp LG(LC(F))  &none     &kp LA(LS(LC(R)))
-                                        &none            &none      &none    &kp LA(LS(LC(LEFT_SHIFT)))  &kp LA(LG(LEFT_GUI))   &none
+                                        &none            &none      &none    &kp LA(LS(LC(LEFT_SHIFT)))  &kp LA(LC(LEFT_GUI))   &none
             >;
         };
 
