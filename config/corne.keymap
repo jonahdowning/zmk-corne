@@ -302,10 +302,10 @@
 
         wShort+Nav {
             bindings = <
-&none                     &none          &kp LA(LBKT)   &kp LA(RBKT)   &kp LC(R)         &kp LC(X)                           &kp LS(TAB)  &kp PG_DN  &kp PG_UP  &kp TAB    &kp ESC  &none
-&none                     &kp LG(LS(S))  &kp LS(LC(Z))  &kp LC(Z)      &kp LC(C)         &kp LC(V)                           &kp LEFT     &kp DOWN   &kp UP     &kp RIGHT  &kp RET  &none
-&kp LA(LS(LEFT_COMMAND))  &kp RSHFT      &kp LEFT_GUI   &kp LALT       &kp LEFT_CONTROL  &kp LS(LA(LC(LG(LEFT_COMMAND))))    &kp HOME     &wDelLine  &none      &kp END    &none    &none
-                                                        &w_ctrlAltDel  &none             &none                               &kp SPACE    &kp BSPC   &kp DEL
+&none                     &none          &kp LA(LEFT_ARROW)  &kp LA(RIGHT)  &kp LC(R)         &kp LC(X)                           &kp LS(TAB)  &kp PG_DN  &kp PG_UP  &kp TAB    &kp ESC  &none
+&none                     &kp LG(LS(S))  &kp LS(LC(Z))       &kp LC(Z)      &kp LC(C)         &kp LC(V)                           &kp LEFT     &kp DOWN   &kp UP     &kp RIGHT  &kp RET  &none
+&kp LA(LS(LEFT_COMMAND))  &kp RSHFT      &kp LEFT_GUI        &kp LALT       &kp LEFT_CONTROL  &kp LS(LA(LC(LG(LEFT_COMMAND))))    &kp HOME     &wDelLine  &none      &kp END    &none    &none
+                                                             &w_ctrlAltDel  &none             &none                               &kp SPACE    &kp BSPC   &kp DEL
             >;
         };
 
