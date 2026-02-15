@@ -258,7 +258,7 @@
         MAC_BASE {
             bindings = <
 &kp ESC               &kp Q             &kp W               &kp E           &kp R           &kp T                             &kp Y                            &kp U            &kp I                &kp O                     &kp P                  &kp MINUS
-&none                 &kp A             &kp S               &kp D           &kp F           &kp G                             &kp H                            &kp J            &kp K                &kp L                     &kp SEMI               &kp SQT
+&kp C                 &kp A             &kp S               &kp D           &kp F           &kp G                             &kp H                            &kp J            &kp K                &kp L                     &kp SEMI               &kp SQT
 &kp LA(LS(LEFT_GUI))  &mt LEFT_SHIFT Z  &mt LEFT_CONTROL X  &mt LEFT_ALT C  &mt LEFT_GUI V  &mt LS(LA(LC(LG(LEFT_GUI)))) B    &mt LC(LA(LS(LG(RIGHT_GUI)))) N  &mt RIGHT_GUI M  &mt RIGHT_ALT COMMA  &mt RIGHT_CONTROL PERIOD  &mt RIGHT_SHIFT SLASH  &none
                                                             &lt 6 ESCAPE    &lt 12 TAB      &lt 4 E                           &kp SPACE                        &lt 10 BSPC      &lt 8 DELETE
             >;
